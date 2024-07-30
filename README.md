@@ -2,11 +2,11 @@
 
 # CS2 to CSV Chrome Extension
 
-This Chrome extension allows you to save item names, links, float values, and paint seeds from your Steam inventory to a CSV file. It highlights selected items with a green border and displays the count of selected items. It works seamlessly with the [CSFloat Market Checker](https://chrome.google.com/webstore/detail/csfloat-market-checker).
+This Chrome extension allows you to save item names, inspect links, float values, and paint seeds from your Steam inventory to a CSV file. It highlights selected items with a green border and displays the count of selected items. It works seamlessly with the [CSFloat Market Checker](https://chrome.google.com/webstore/detail/csfloat-market-checker).
 
 ## Features
 
-- Save item names, links, float values, and paint seeds to a CSV file.
+- Save item names, inspect links, float values, and paint seeds to a CSV file.
 - Highlights selected items with a green border.
 - Displays the count of selected items.
 - Reset the selection at any time.
