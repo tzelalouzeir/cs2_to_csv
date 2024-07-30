@@ -31,7 +31,7 @@ If you find this extension useful, consider donating skins or cryptocurrency to 
 
 ### Donate Cryptocurrency
 - Bitcoin (Bitcoin Network): `1PVgsK6hrMD9oL6asVfoXpDV45ixepXvQE` 
-- Ethereum (ERC20) | BNB (BEP20) | USDT (BEP20): `0x303e58d8c6d5d701695d6a5b6d5bad43bbc3a7ad`
+- Ethereum | BNB | USDT (BEP20): `0x303e58d8c6d5d701695d6a5b6d5bad43bbc3a7ad`
 
 ## Credits
 
