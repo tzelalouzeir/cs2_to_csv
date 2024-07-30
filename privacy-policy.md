@@ -14,7 +14,7 @@ This extension is open-source. You can view the source code on [GitHub](https://
 
 ### Contact Us
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at [your email].
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at tzelalouzeir@gmail.com.
 
 ---
 
