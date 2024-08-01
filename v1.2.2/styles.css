@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #34495e;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+}
+
+.logo {
+  width: 100%; /* Adjust as necessary */
+  max-width: 300px; /* Maximum width */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #1c5980;
+  transform: scale(0.95);
+}
+
+#toggle.activate {
+  background-color: #2ecc71;
+}
+
+#toggle.deactivate {
+  background-color: #e74c3c;
+}
+
+.credits {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.credits p {
+  margin: 5px 0;
+}
+
+.credits a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.credits a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for inner border */
+.inner-border {
+  box-sizing: border-box;
+  border: 3px solid green;
+}
+
+.version-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.9em;
+  color: #bdc3c7;
+}
+
+.version-badge, .last-updated-badge {
+  background-color: #2c3e50;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.version-badge .label, .last-updated-badge .label {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #ecf0f1;
+}
+
+.version-badge .value, .last-updated-badge .value {
+  color: #3498db;
+}
+
