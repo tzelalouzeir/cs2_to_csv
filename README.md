@@ -37,7 +37,7 @@ If you'd like to use an older version or the current version of this extension a
 3. Click on `"Load unpacked"` and select the directory where the project files are located.
 4. The extension will now be installed and can be used like any other extension.
 
-## Donate
+## Did you like it?
 
 If you find this extension useful, consider donating skins or cryptocurrency to support development.
 
