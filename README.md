@@ -24,9 +24,8 @@ This Chrome extension allows you to save item names, links, float values, and pa
 3. **Download CSV**: Click the extension icon and click "Download CSV".
 4. **Reset Selection**: Click "Reset" to clear your selection.
  
-<img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/menu.png" alt="CS2CSV menu" width="600">
-<img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/selected.png" alt="CS2CSV selected" width="600">
-<img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/csv.png" alt="CS2CSV csv" width="600">
+https://github.com/user-attachments/assets/fdeb6b10-8005-47cf-883e-791020b91a0a
+
 
 ## Using Old or Current Versions
 If you'd like to use an older version or the current version of this extension and upload it as a developer extension:
