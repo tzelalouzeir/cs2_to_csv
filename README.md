@@ -39,6 +39,7 @@ If you find this extension useful, consider donating skins or cryptocurrency to 
 
 Created by [hannibalCS2](https://www.twitch.tv/hannibalcs2)  
 GitHub: [tzelalouzeir](https://github.com/tzelalouzeir)
+Thanks to [Step7750](https://github.com/Step7750) CSFloat CEO
 
 ## License
 
