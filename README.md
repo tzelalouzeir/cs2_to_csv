@@ -56,8 +56,4 @@ Thanks to [Step7750](https://github.com/Step7750) CSFloat CEO for permission fro
 
 ## License
 
-All rights reserved.
-
-## Support
-
-For support or feedback, contact [hannibalCS2](https://www.twitch.tv/hannibalcs2).
+All rights reserved. For any collaboration please contact with me.
