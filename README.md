@@ -28,6 +28,16 @@ This Chrome extension allows you to save item names, links, float values, and pa
 <img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/selected.png" alt="CS2CSV selected" width="600">
 <img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/csv.png" alt="CS2CSV csv" width="600">
 
+## Using Old or Current Versions
+If you'd like to use an older version or the current version of this extension and upload it as a developer extension:
+
+**Download the Project**: Clone or download the project files from the GitHub repository.
+**Upload as Developer Extension**: 
+1. Open Chrome and go to `chrome://extensions/`. 
+2. Enable `"Developer mode"` in the top right corner.
+3. Click on `"Load unpacked"` and select the directory where the project files are located.
+4. The extension will now be installed and can be used like any other extension.
+
 ## Donate
 
 If you find this extension useful, consider donating skins or cryptocurrency to support development.
