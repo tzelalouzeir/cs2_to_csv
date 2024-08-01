@@ -23,7 +23,7 @@ This Chrome extension allows you to save item names, links, float values, and pa
 2. **Select Items**: Go to your Steam CS2 inventory and `double-click` on items/skins to record them. Use `Ctrl + Double-click` to remove items from the selection.
 3. **Download CSV**: Click the extension icon and click "Download CSV".
 4. **Reset Selection**: Click "Reset" to clear your selection.
-5. 
+ 
 <img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/menu.png" alt="CS2CSV menu" width="600">
 <img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/selected.png" alt="CS2CSV selected" width="600">
 <img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/csv.png" alt="CS2CSV csv" width="600">
