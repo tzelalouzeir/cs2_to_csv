@@ -1,4 +1,4 @@
-![CS2CSV Logo](https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/logo2.png)
+![CS2CSV Logo](https://github.com/tzelalouzeir/cs2_to_csv/blob/main/src/logo2.png)
 
 # CS2 to CSV Chrome Extension
 
