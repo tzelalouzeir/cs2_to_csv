@@ -23,6 +23,10 @@ This Chrome extension allows you to save item names, links, float values, and pa
 2. **Select Items**: Go to your Steam inventory and click on items twice to record them.
 3. **Download CSV**: Click the extension icon and click "Download CSV".
 4. **Reset Selection**: Click "Reset" to clear your selection.
+5. 
+<img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/menu.png" alt="CS2CSV menu" width="600">
+<img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/selected.png" alt="CS2CSV selected" width="600">
+<img src="https://github.com/tzelalouzeir/cs2_to_csv/blob/main/img/csv.png" alt="CS2CSV csv" width="600">
 
 ## Donate
 
@@ -39,6 +43,7 @@ If you find this extension useful, consider donating skins or cryptocurrency to 
 
 Created by [hannibalCS2](https://www.twitch.tv/hannibalcs2)  
 GitHub: [tzelalouzeir](https://github.com/tzelalouzeir)
+
 Thanks to [Step7750](https://github.com/Step7750) CSFloat CEO
 
 ## License
