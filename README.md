@@ -20,7 +20,7 @@ This Chrome extension allows you to save item names, links, float values, and pa
 ## Usage
 
 1. **Activate the Extension**: Click the extension icon and click "Activate".
-2. **Select Items**: Go to your Steam inventory and click on items twice to record them.
+2. **Select Items**: Go to your Steam CS2 inventory and `double-click` on items/skins to record them. Use `Ctrl + Double-click` to remove items from the selection.
 3. **Download CSV**: Click the extension icon and click "Download CSV".
 4. **Reset Selection**: Click "Reset" to clear your selection.
 5. 
