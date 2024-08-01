@@ -4,7 +4,6 @@ chrome.storage.local.get(['extensionActive'], function(result) {
       window.hasRunContentScript = true;
 
       let items = [];
-      let isFirstClick = true;
 
       // Extract Steam ID from the URL
       const url = window.location.href;
@@ -30,44 +29,54 @@ chrome.storage.local.get(['extensionActive'], function(result) {
 
       function attachClickListeners() {
         document.querySelectorAll('.itemHolder').forEach(holder => {
-          holder.removeEventListener('click', handleClick); // Remove previous listeners
-          holder.addEventListener('click', handleClick);
+          holder.removeEventListener('dblclick', handleClick); // Remove previous listeners
+          holder.addEventListener('dblclick', handleClick);
         });
       }
 
       function handleClick(event) {
-        if (isFirstClick) {
-          isFirstClick = false;
-        } else {
-          isFirstClick = true;
+        const itemNameElement = document.querySelector('.hover_item_name');
+        const itemActionElement = document.querySelector('.item_actions a');
+        const csfloatElement = document.querySelector('csfloat-selected-item-info');
 
-          const itemNameElement = document.querySelector('.hover_item_name');
-          const itemActionElement = document.querySelector('.item_actions a');
-          const csfloatElement = document.querySelector('csfloat-selected-item-info');
+        const itemName = itemNameElement ? itemNameElement.innerText.replace(/\s+/g, ' ').trim() : 'N/A';
+        const itemActionLink = itemActionElement ? itemActionElement.href : 'N/A';
 
-          const itemName = itemNameElement ? itemNameElement.innerText.replace(/\s+/g, ' ').trim() : 'N/A';
-          const itemActionLink = itemActionElement ? itemActionElement.href : 'N/A';
+        let floatValue = 'N/A';
+        let paintSeed = 'N/A';
 
-          let floatValue = 'N/A';
-          let paintSeed = 'N/A';
+        if (csfloatElement) {
+          const shadowRoot = csfloatElement.shadowRoot;
+          const floatElement = shadowRoot.querySelector('.container div:nth-child(1)');
+          const paintSeedElement = shadowRoot.querySelector('.container div:nth-child(2)');
 
-          if (csfloatElement) {
-            const shadowRoot = csfloatElement.shadowRoot;
-            const floatElement = shadowRoot.querySelector('.container div:nth-child(1)');
-            const paintSeedElement = shadowRoot.querySelector('.container div:nth-child(2)');
-
-            if (floatElement) {
-              let floatText = floatElement.textContent.split(': ')[1].trim();
-              floatValue = floatText.split(' ')[0].replace(/[\n\r]+/g, '').replace(/"/g, ''); // Remove rank and extra characters
-            }
-
-            if (paintSeedElement) {
-              let paintSeedText = paintSeedElement.textContent.split(': ')[1].trim();
-              paintSeed = paintSeedText.split(' ')[0].replace(/[\n\r]+/g, '').replace(/"/g, ''); // Remove phase and extra characters
-            }
+          if (floatElement) {
+            let floatText = floatElement.textContent.split(': ')[1].trim();
+            floatValue = floatText.split(' ')[0].replace(/[\n\r]+/g, '').replace(/"/g, ''); // Remove rank and extra characters
           }
 
-          if (!items.some(item => item.name === itemName && item.link === itemActionLink && item.float === floatValue && item.paintSeed === paintSeed)) {
+          if (paintSeedElement) {
+            let paintSeedText = paintSeedElement.textContent.split(': ')[1].trim();
+            paintSeed = paintSeedText.split(' ')[0].replace(/[\n\r]+/g, '').replace(/"/g, ''); // Remove phase and extra characters
+          }
+        }
+
+        const itemIndex = items.findIndex(item => item.name === itemName && item.link === itemActionLink && item.float === floatValue && item.paintSeed === paintSeed);
+
+        if (event.ctrlKey) {
+          // Ctrl + Double-click to remove item
+          if (itemIndex !== -1) {
+            items.splice(itemIndex, 1);
+            // Remove green border from the item holder
+            let innerDiv = event.currentTarget.querySelector('.inner-border');
+            if (innerDiv) {
+              innerDiv.remove();
+            }
+            updateCount();
+          }
+        } else {
+          // Double-click to add item
+          if (itemIndex === -1) {
             items.push({ name: itemName, link: itemActionLink, float: floatValue, paintSeed: paintSeed });
 
             // Add inner div with green border to the item holder
@@ -84,10 +93,11 @@ chrome.storage.local.get(['extensionActive'], function(result) {
               event.currentTarget.style.position = 'relative'; // Ensure the holder is positioned relative for the inner div
               event.currentTarget.appendChild(innerDiv);
             }
+            updateCount();
           }
-          updateCount();
-          console.log('Items:', items);
         }
+
+        console.log('Items:', items);
       }
 
       const observer = new MutationObserver(() => {
