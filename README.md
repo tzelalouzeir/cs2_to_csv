@@ -50,8 +50,7 @@ If you find this extension useful, consider donating skins or cryptocurrency to 
 
 ## Credits
 
-Created by [hannibalCS2 (me)](https://www.twitch.tv/hannibalcs2)  
-GitHub: [tzelalouzeir](https://github.com/tzelalouzeir)
+Created by me aka [hannibalCS2](https://www.twitch.tv/hannibalcs2)
 
 Thanks to [Step7750](https://github.com/Step7750) CSFloat CEO for permission from CSFloat Market Checker extension.
 
