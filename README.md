@@ -14,7 +14,7 @@ This Chrome extension allows you to save item names, links, float values, and pa
 
 ## Installation
 
-1. Install **CS2 Skins to CSV** from the [Chrome Web Store](https://chrome.google.com/webstore).
+1. Install **CS2 Skins to CSV** from the [Chrome Web Store](https://chromewebstore.google.com/detail/cs2-to-csv/cldamldgpigiodbpdeodibkobcdlhljg).
 2. Install **CSFloat Market Checker** from the [Chrome Web Store](https://chromewebstore.google.com/detail/csfloat-market-checker/jjicbefpemnphinccgikpdaagjebbnhg).
 
 ## Usage
