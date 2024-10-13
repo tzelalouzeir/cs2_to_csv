@@ -2,15 +2,15 @@
 
 # CS2 to CSV Chrome Extension
 
-This Chrome extension allows you to save item names, links, float values, and paint seeds from your Steam inventory to a CSV file. It highlights selected items with a green border and displays the count of selected items. It works seamlessly with the [CSFloat Market Checker](https://chrome.google.com/webstore/detail/csfloat-market-checker).
+This Chrome extension allows you to save item names, links, float values, and paint seeds from your Steam inventory to a CSV file. It also color-codes selected items based on Paint Seeds for easy identification of their rarity and pattern. It works seamlessly with the [CSFloat Market Checker](https://chrome.google.com/webstore/detail/csfloat-market-checker).
 
 ## Features
 
 - Save item names, links, float values, and paint seeds to a CSV file.
-- Highlights selected items with a green border.
 - Displays the count of selected items.
 - Reset the selection at any time.
 - Integrates with CSFloat Market Checker.
+- Highlights items with a color-coded background based on their Paint Seed (only for **Desert Eagle | Heat Treated** for now and reference from [Desert Eagle Heat Treated | Blue Gem Patterns](https://steamcommunity.com/sharedfiles/filedetails/?id=3343006125))
 
 ## Installation
 
@@ -21,21 +21,22 @@ This Chrome extension allows you to save item names, links, float values, and pa
 
 1. **Activate the Extension**: Click the extension icon and click "Activate".
 2. **Select Items**: Go to your Steam CS2 inventory and `double - left click` on items/skins to record them. Use `Ctrl + double - left click` to remove items from the selection.
-3. **Download CSV**: Click the extension icon and click "Download CSV".
-4. **Reset Selection**: Click "Reset" to clear your selection.
+3. **Color-coded Highlighting**: Items are highlighted based on their Paint Seed value (see the floating legend in the top-left corner of the page for details on what each color represents).
+4. **Download CSV**: Click the extension icon and click "Download CSV".
+5. **Reset Selection**: Click "Reset" to clear your selection.
+6. **Detect Heat Treated Pattern Seeds**: Automatically detect Desert Eagle | Heat Treated link and highlighting.
  
-https://github.com/user-attachments/assets/fdeb6b10-8005-47cf-883e-791020b91a0a
-
+![Color Legend Example](https://user-images.githubusercontent.com/color_legend_example.png)
 
 ## Using Old or Current Versions
 If you'd like to use an older version or the current version of this extension and upload it as a developer extension:
 
-**Download the Project**: Clone or download the project files from the GitHub repository.
-**Upload as Developer Extension**: 
-1. Open Chrome and go to `chrome://extensions/`. 
-2. Enable `"Developer mode"` in the top right corner.
-3. Click on `"Load unpacked"` and select the directory where the project files are located.
-4. The extension will now be installed and can be used like any other extension.
+1. **Download the Project**: Clone or download the project files from the GitHub repository.
+2. **Upload as Developer Extension**:
+   1. Open Chrome and go to `chrome://extensions/`.
+   2. Enable `"Developer mode"` in the top right corner.
+   3. Click on `"Load unpacked"` and select the directory where the project files are located.
+   4. The extension will now be installed and can be used like any other extension.
 
 ## Did you like it?
 
@@ -52,8 +53,8 @@ If you find this extension useful, consider donating skins or cryptocurrency to 
 
 Created by me aka [hannibalCS2](https://www.twitch.tv/hannibalcs2)
 
-Thanks to [Step7750](https://github.com/Step7750) CSFloat CEO for permission using CSFloat Market Checker extension.
+Thanks to [Step7750](https://github.com/Step7750) CSFloat CEO for permission to use the CSFloat Market Checker extension.
 
 ## License
 
-All rights reserved. For any collaboration please contact with me.
+All rights reserved. For any collaboration please contact me.
