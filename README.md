@@ -26,6 +26,9 @@ This Chrome extension allows you to save item names, links, float values, and pa
 5. **Reset Selection**: Click "Reset" to clear your selection.
 6. **Detect Heat Treated Pattern Seeds**: Automatically detect Desert Eagle | Heat Treated link and highlighting.
 
+![Color Legend Example](https://github.com/tzelalouzeir/cs2_to_csv/blob/main/src/deagle_blue_gem.png)
+
+
 ## Using Old or Current Versions
 If you'd like to use an older version or the current version of this extension and upload it as a developer extension:
 
