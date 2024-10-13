@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "CS2 to CSV",
+  "version": "1.2.3",
+  "description": "Save CS2 skins to a CSV file.",
+  "icons": {
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions": ["activeTab", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://steamcommunity.com/id/*/inventory/*",
+        "*://steamcommunity.com/profiles/*/inventory/*",
+        "*://steamcommunity.com/market/listings/730/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    },
+    {
+
+      "matches": [
+        "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Heat%20Treated%20%28Factory%20New%29",
+        "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Heat%20Treated%20%28Minimal%20Wear%29",
+        "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Heat%20Treated%20%28Field-Tested%29",
+        "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Heat%20Treated%20%28Well-Worn%29",
+        "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Heat%20Treated%20%28Battle-Scarred%29"
+      ],
+      "js": ["highlight_feature.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": [
+    "*://steamcommunity.com/id/*/inventory/*",
+    "*://steamcommunity.com/profiles/*/inventory/*",
+    "*://steamcommunity.com/market/listings/730/*"
+  ]
+}
