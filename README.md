@@ -39,16 +39,6 @@ If you'd like to use an older version or the current version of this extension a
    3. Click on `"Load unpacked"` and select the directory where the project files are located.
    4. The extension will now be installed and can be used like any other extension.
 
-## Did you like it?
-
-If you find this extension useful, consider donating skins or cryptocurrency to support development.
-
-### Donate Skins
-- Steam Trade URL: [hannibal Trade URL](https://steamcommunity.com/tradeoffer/new/?%20partner=155366280&amp;token=NsW3QqBd)
-
-### Donate Cryptocurrency
-- Bitcoin (Bitcoin Network): `1PVgsK6hrMD9oL6asVfoXpDV45ixepXvQE` 
-- Ethereum | BNB | USDT (BEP20): `0x303e58d8c6d5d701695d6a5b6d5bad43bbc3a7ad`
 
 ## Credits
 
